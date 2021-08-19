@@ -10,13 +10,30 @@
 import SwiftUI
 
 struct MessageItem: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    var data:Message
+    
+    var body: some View{
+        HStack(spacing:12){
+            
+            Image(data.img)
+                .resizable()
+                .frame(width: 55, height: 55)
+            
+            VStack(alignment: .leading, spacing: 12) {
+                Text(data.name)
+                Text(data.name).font(.caption)
+            }
+            Spacer(minLength: 0)
+            VStack{
+                Text(data.date)
+                Spacer()
+            }
+        }.padding(.vertical)
     }
 }
 
-struct MessageItem_Previews: PreviewProvider {
+/*struct MessageItem_Previews: PreviewProvider {
     static var previews: some View {
         MessageItem()
     }
-}
+}*/
