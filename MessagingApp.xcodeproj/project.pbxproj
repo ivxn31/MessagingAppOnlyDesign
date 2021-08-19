@@ -15,6 +15,7 @@
 		1D7A248626CEEA4600D82384 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A248526CEEA4600D82384 /* Message.swift */; };
 		1D7A248826CEEB1C00D82384 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A248726CEEB1C00D82384 /* Messages.swift */; };
 		1D7A248A26CEEB6500D82384 /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A248926CEEB6500D82384 /* MessageItem.swift */; };
+		1D7A248C26CF14B100D82384 /* NavigationBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A248B26CF14B100D82384 /* NavigationBottom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1D7A248526CEEA4600D82384 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1D7A248726CEEB1C00D82384 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		1D7A248926CEEB6500D82384 /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
+		1D7A248B26CF14B100D82384 /* NavigationBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBottom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				1D7A248226CEE2B000D82384 /* TopView.swift */,
 				1D7A248726CEEB1C00D82384 /* Messages.swift */,
 				1D7A248926CEEB6500D82384 /* MessageItem.swift */,
+				1D7A248B26CF14B100D82384 /* NavigationBottom.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				1D7A248126CEE28600D82384 /* Home.swift in Sources */,
 				1D7A248626CEEA4600D82384 /* Message.swift in Sources */,
 				1D7A248326CEE2B000D82384 /* TopView.swift in Sources */,
+				1D7A248C26CF14B100D82384 /* NavigationBottom.swift in Sources */,
 				1D7A246F26CEBB4400D82384 /* MessagingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

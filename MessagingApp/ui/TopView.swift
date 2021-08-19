@@ -84,7 +84,7 @@ struct TopView_Previews: PreviewProvider {
 
 struct ShapeTopView:Shape {
     func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: 28, height: 28))
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: 33, height: 33))
         return Path(path.cgPath)
     }
 }

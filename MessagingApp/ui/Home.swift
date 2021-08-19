@@ -14,8 +14,9 @@ struct Home: View {
         VStack(spacing: 0) {
             TopView().zIndex(25)
             Messages().offset(y: -25)
-            Spacer()
-        }.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            NavigationBottom()
+        }.background(Color("DeepKoamaru"))
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 
