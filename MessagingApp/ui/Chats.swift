@@ -11,32 +11,12 @@ import SwiftUI
 
 struct Chats: View {
     
-    
+    @Binding var expand:Bool
     
     var body: some View {
-        
-        /*ZStack{
-            VStack{
-                Color.white
-                Color("DeepKoamaru")
-            }
-            
-            VStack(spacing: 0) {
-                TopView().zIndex(25)
-                Messages().offset(y: -25)
-                NavigationBottom(index: self.$index)
-            }
-        }
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)*/
         VStack(spacing: 0) {
-            TopView().zIndex(25)
-            Messages().offset(y: -25)
+            TopView(expand: self.$expand).zIndex(25)
+            Messages(expand: self.$expand).offset(y: -25)
         }
-    }
-}
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Chats()
     }
 }

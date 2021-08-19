@@ -12,6 +12,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var index = 0
+    @State var expand = false
     
     var body: some View {
         ZStack{
@@ -22,7 +23,7 @@ struct ContentView: View {
             
             VStack{
                 ZStack{
-                    Chats().opacity(self.index == 0 ? 1 : 0)
+                    Chats(expand: self.$expand).opacity(self.index == 0 ? 1 : 0)
                     Groups().opacity(self.index == 1 ? 1 : 0)
                     Settings().opacity(self.index == 2 ? 1 : 0)
                 }

@@ -12,11 +12,13 @@ import SwiftUI
 struct TopView: View {
     
     @State var search = ""
+    @Binding var expand:Bool
     
     var body: some View {
         VStack(spacing: 18){
-            HStack{
-                Text("Messages")
+            if self.expand{
+                HStack{
+                    Text("Messages")
                     .fontWeight(.bold)
                     .font(.title)
                     .foregroundColor(Color.black.opacity(0.7))
@@ -31,32 +33,33 @@ struct TopView: View {
                     
                 }
             }
-            
-        ScrollView(.horizontal,showsIndicators:false){
-            HStack(spacing:18){
-                Button(action:{
-                    
-                }){
-                    Image(systemName: "plus")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .foregroundColor(Color("RoyalBlue"))
-                        .padding(25)
-                }.background(Color("RoyalBlue").opacity(0.5))
-                .clipShape(Circle())
-                
-                ForEach(1...7,id: \.self){ i in
-                    Button(action:{
+                ScrollView(.horizontal,showsIndicators:false){
+                    HStack(spacing:18){
+                        Button(action:{
+                            
+                        }){
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(Color("RoyalBlue"))
+                                .padding(25)
+                        }.background(Color("RoyalBlue").opacity(0.5))
+                        .clipShape(Circle())
                         
-                    }){
-                        Image("p\(i)")
-                            .resizable()
-                            .renderingMode(.original)
-                            .frame(width: 60, height: 60)
+                        ForEach(1...7,id: \.self){i in
+                            Button(action:{
+                                
+                            }){
+                                Image("p\(i)")
+                                .resizable()
+                                .renderingMode(.original)
+                                .frame(width: 60, height: 60)
+                            }
+                        }
                     }
                 }
             }
-        }
+            
             
             HStack(spacing:15){
                 Image(systemName: "magnifyingglass")
@@ -73,12 +76,7 @@ struct TopView: View {
         .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
         .background(Color("GhostWhite"))
         .clipShape(ShapeTopView())
-    }
-}
-
-struct TopView_Previews: PreviewProvider {
-    static var previews: some View {
-        TopView()
+        .animation(.default)
     }
 }
 

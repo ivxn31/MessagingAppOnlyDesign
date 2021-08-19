@@ -85,14 +85,14 @@
 		1D7A247E26CEE12000D82384 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				1D7A247026CEBB4400D82384 /* ContentView.swift */,
 				1D7A248026CEE28600D82384 /* Chats.swift */,
-				1D7A248226CEE2B000D82384 /* TopView.swift */,
-				1D7A248726CEEB1C00D82384 /* Messages.swift */,
-				1D7A248926CEEB6500D82384 /* MessageItem.swift */,
-				1D7A248B26CF14B100D82384 /* NavigationBottom.swift */,
+				1D7A247026CEBB4400D82384 /* ContentView.swift */,
 				1D7A248D26CF194400D82384 /* Groups.swift */,
+				1D7A248926CEEB6500D82384 /* MessageItem.swift */,
+				1D7A248726CEEB1C00D82384 /* Messages.swift */,
+				1D7A248B26CF14B100D82384 /* NavigationBottom.swift */,
 				1D7A248F26CF195000D82384 /* Settings.swift */,
+				1D7A248226CEE2B000D82384 /* TopView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";

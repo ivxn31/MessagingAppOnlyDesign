@@ -10,19 +10,26 @@
 import SwiftUI
 
 struct Messages: View {
+    
+    @Binding var expand: Bool
+    
     var body: some View {
         List(data){ i in
-            MessageItem(data: i)
+            if i.id == 0{
+                MessageItem(data: i)
+                    .onAppear{
+                        self.expand = true
+                    }.onDisappear{
+                        self.expand = false
+                    }
+            }else{
+                MessageItem(data: i)
+            }
+            
         }
         .padding(.top,20)
         .background(Color.white)
         .clipShape(ShapeTopView())
-    }
-}
-
-struct Messages_Previews: PreviewProvider {
-    static var previews: some View {
-        Messages()
     }
 }
 
