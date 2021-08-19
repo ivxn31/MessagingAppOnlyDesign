@@ -7,4 +7,10 @@
  */
 
 
-import Foundation
+struct Message: Identifiable{
+    var id: Int
+    var name:String
+    var msg:String
+    var date:String
+    var img:String
+}
