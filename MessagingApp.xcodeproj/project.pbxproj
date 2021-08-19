@@ -10,7 +10,6 @@
 		1D7A246F26CEBB4400D82384 /* MessagingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A246E26CEBB4400D82384 /* MessagingAppApp.swift */; };
 		1D7A247126CEBB4400D82384 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A247026CEBB4400D82384 /* ContentView.swift */; };
 		1D7A247326CEBB4500D82384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7A247226CEBB4500D82384 /* Assets.xcassets */; };
-		1D7A247626CEBB4500D82384 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7A247526CEBB4500D82384 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +17,6 @@
 		1D7A246E26CEBB4400D82384 /* MessagingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingAppApp.swift; sourceTree = "<group>"; };
 		1D7A247026CEBB4400D82384 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D7A247226CEBB4500D82384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D7A247526CEBB4500D82384 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D7A247726CEBB4500D82384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,21 +50,36 @@
 		1D7A246D26CEBB4400D82384 /* MessagingApp */ = {
 			isa = PBXGroup;
 			children = (
-				1D7A246E26CEBB4400D82384 /* MessagingAppApp.swift */,
-				1D7A247026CEBB4400D82384 /* ContentView.swift */,
-				1D7A247226CEBB4500D82384 /* Assets.xcassets */,
-				1D7A247726CEBB4500D82384 /* Info.plist */,
-				1D7A247426CEBB4500D82384 /* Preview Content */,
+				1D7A247F26CEE12D00D82384 /* config */,
+				1D7A247E26CEE12000D82384 /* ui */,
+				1D7A247D26CEE10900D82384 /* resources */,
 			);
 			path = MessagingApp;
 			sourceTree = "<group>";
 		};
-		1D7A247426CEBB4500D82384 /* Preview Content */ = {
+		1D7A247D26CEE10900D82384 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				1D7A247526CEBB4500D82384 /* Preview Assets.xcassets */,
+				1D7A247226CEBB4500D82384 /* Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = resources;
+			sourceTree = "<group>";
+		};
+		1D7A247E26CEE12000D82384 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1D7A247026CEBB4400D82384 /* ContentView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		1D7A247F26CEE12D00D82384 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				1D7A246E26CEBB4400D82384 /* MessagingAppApp.swift */,
+				1D7A247726CEBB4500D82384 /* Info.plist */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +139,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7A247626CEBB4500D82384 /* Preview Assets.xcassets in Resources */,
 				1D7A247326CEBB4500D82384 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,11 +278,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MessagingApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MessagingApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MessagingApp/config/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,11 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MessagingApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MessagingApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MessagingApp/config/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
