@@ -1,4 +1,4 @@
-# Aplicación de Mensajeria(Sol diseño)
+# Aplicación de Mensajeria(Solo diseño)
 Diseño con funcionalidad simple con SwiftUI.
 <br>
 Estructura más modularizada en las carpetas y las vistas, ha diferencia del vídeo tutorial que puedes encontrar en este [link](https://www.youtube.com/watch?v=vfbu00p8e38&ab_channel=Kavsoft)
